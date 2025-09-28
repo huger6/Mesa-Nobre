@@ -1,0 +1,225 @@
+<!--
+  Copyright (c) 2025 Hugo Afonso (huger6)
+  Todos os direitos reservados | All rights reserved.
+
+  É proibida a cópia, modificação ou redistribuição deste ficheiro
+  sem autorização expressa do autor.
+  Copying, modifying or redistributing this file without permission is prohibited.
+
+  Contacto: hugoafonso333@gmail.com
+-->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa Nobre - Contactos</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="static/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/icons/favicon-16x16.png">
+    <link rel="manifest" href="static/site.webmanifest">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Leaflet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Core CSS theme -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+    <header class="flex-shrink-0">
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container-fluid d-flex align-items-center px-0 px-lg-2 px-xl-5">
+                <a class="navbar-brand me-auto ms-5" href="index.html">
+                    <img src="static/logo.png" loading="eager" style="width: 75px; height: 75px;" alt="Logo">
+                </a>
+                <div class="d-flex align-items-center gap-2 gap-xl-3 gap-xxl-4 ms-3">
+                    <!-- Social Media here -->
+                    <button class="navbar-toggler pe-4 custom-navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Alterar modod de navegação">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header m-2 text-center justify-content-start gap-3" style="position: relative;">
+                            <a href="index.html" style="text-decoration: none;"><img class="user-select-false" src="static/logo.png" loading="lazy" style="width: 60px; height: 60px;" alt="Logo"></a>
+                            <a href="index.html" style="text-decoration: none; margin-left: 5px !important;"><h3 class="user-select-false content-title m-0 p-0" style="color: var(--navLinkColor); padding-top: 8px !important;">Mesa Nobre</h3></a>
+                            <button type="button" class="close-button-hamburger-menu me-4" style="padding-top: 8px !important;" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                        </div>
+                        <div class="offcanvas-body pe-2 pe-xl-4 ms-3 ms-md-0">
+                            <ul class="navbar-nav justify-content-end flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link mx-xl-1 navbar-option user-select-false" href="index.html">Início</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-xl-1 navbar-option user-select-false" href="menu.html">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-xl-1 navbar-option user-select-false" style="color: var(--navLinkColor) !important;" href="contact.html">Contactos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-xl-1 navbar-option user-select-false" href="galery.html">Galeria</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero -->
+    <section class="d-flex justify-content-center flex-shrink-0 hero-section" id="contact-bg-img">
+        <div class="hero-overlay"></div>
+    </section>
+    <main class="pt-4">
+        <!-- Contact Information -->
+        <div class="container-xl px-0 px-lg-2 px-xl-4 py-2 d-flex flex-column">
+            <div class="d-flex flex-column align-items-center">
+                <h1 class="content-title d-none d-md-flex" style="position: relative; padding: 0.2rem 0.6rem;">Como entrar em contacto<div class="underline"></div></h1>
+                <div class="d-flex d-md-none flex-column flex-md-row align-items-center justify-content-center">
+                    <h1 class="content-title align-self-start me-4 me-sm-5" style="position: relative; padding: 0.2rem 0.6rem;">Como entrar <div class="underline"></div></h1>
+                    <h1 class="content-title ms-3 ms-sm-4" style="position: relative; padding: 0.2rem 0.6rem;">em contacto<div class="underline"></div></h1>
+                </div>
+                <div class="content-text px-4 px-xl-5 py-0 d-flex flex-column gap-1 mt-3">
+                    <p class="px-0 px-md-3 px-xl-5" style="font-weight: 200 !important; text-align: center; max-width: 800px;">Saiba onde estamos localizados e como nos pode contactar para colocar as suas questões ou efetuar uma reserva.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-wrap flex-lg-nowrap gap-2 gap-md-3 gap-xl-5 px-md-1 px-xl-3 mx-4 mt-3">
+                <div class="contact-container d-flex justify-content-center align-items-center gap-2 gap-lg-4 gap-xxl-5 flex-column flex-nowrap">
+                    <div class="d-flex flex-row align-items-center flex-nowrap gap-3 align-titles">
+                        <i class="bi bi-telephone contact-icon"></i>
+                        <span class="contact-subtitle">Telefone<div class="underline"></div></span>
+                    </div>
+                    <div class="d-flex flex-column flex-nowrap gap-2">
+                        <a class="contact-content" href="tel:">+351 999 999 999</a>
+                        <span class="contact-details mt-2">Chamada para rede móvel nacional</span>
+                    </div>
+                </div>
+                <div class="contact-container d-flex justify-content-center align-items-center gap-2 gap-lg-4 gap-xxl-5 flex-column flex-nowrap">
+                    <div class="d-flex flex-row align-items-center flex-nowrap gap-3 align-titles">
+                        <i class="bi bi-envelope-at contact-icon"></i>
+                        <span class="contact-subtitle">Email<div class="underline"></div></span>
+                    </div>
+                    <a class="contact-content" href="mailto:contactos@mesanobre.pt">info@mesanobre.pt</a>
+                </div>
+                <div class="contact-container d-flex justify-content-center align-items-center gap-2 gap-lg-4 gap-xxl-5 flex-column flex-nowrap">
+                    <div class="d-flex flex-row align-items-center flex-nowrap gap-3 align-titles">
+                        <i class="bi bi-geo-alt contact-icon"></i>
+                        <span class="contact-subtitle">Morada<div class="underline"></div></span>
+                    </div>
+                    <a class="contact-content mt-4" href="https://maps.app.goo.gl/sJtAXBQ4iG6oBji78" target="_blank">R. Dra. Maria Rita Cabral Sousa Ramos 2, 3430-261 Carregal do Sal</a>
+                </div>
+            </div>
+        </div>
+        <!-- Map -->
+        <div class="container-fluid alt-style mt-4">
+            <div class="card-body">
+                <div id="map"></div>
+            </div>
+        </div>
+        <!-- Social Media -->
+        <div class="container-xl px-0 px-lg-2 px-xl-4 py-2 d-flex flex-column mt-4">
+            <div class="d-flex justify-content-center align-items-center">
+                <h1 class="content-title d-none d-md-flex" style="position: relative; padding: 0.2rem 0.6rem;">Venha conhecer-nos nas redes sociais<div class="underline"></div></h1>
+                <div class="d-flex d-md-none flex-column flex-md-row align-items-center justify-content-center">
+                    <h1 class="content-title align-self-start me-4 me-sm-5" style="position: relative; padding: 0.2rem 0.6rem;">Venha conhecer-nos <div class="underline"></div></h1>
+                    <h1 class="content-title ms-3 ms-sm-4" style="position: relative; padding: 0.2rem 0.6rem;">nas redes sociais<div class="underline"></div></h1>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column p-4">
+                <img class="img-fluid rounded shadow-sm" src="static/instaPost.png" alt="Instagram Post" loading="lazy" id="instaPost">
+                <div class="d-flex justify-content-center align-items-center flex-column mt-4 gap-4">
+                    <a class="social-media-card" href="https://facebook.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="#0866FF" style="background-color: #FFFFFF; border-radius: 50%;"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                        <span class="social-media-name">Mesa Nobre</span>
+                    </a>
+                    <a class="social-media-card" href="https://instagram.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="#FF0069"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                        <span class="social-media-name">mesanobre</span>
+                    </a>
+                    <a class="social-media-card" href="https://whatsapp.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="#FFFFFF"><title>X</title><path xmlns="http://www.w3.org/2000/svg" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                        <span class="social-media-name">mesa.nobre</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid px-3 py-5 mt-auto">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column flex-md-row align-items-start flex-nowrap gap-4 gap-xl-5 g-0">
+                <!-- Company -->
+                <div class="d-flex align-items-center flex-column flex-md-row flex-nowrap gap-2 gap-lg-4 gap-xl-5 p-0 g-0">
+                    <!-- Logo -->
+                    <div class="d-flex flex-column align-items-center gap-2 gap-md-3 p-2">
+                        <a href="index.html"><img src="static/logo.png" alt="Logo" loading="lazy" style="width: 80px; height: 80px;"></a>
+                        <div class="small m-0 p-0">Copyright &copy; Mesa Nobre 2025</div>
+                    </div>
+                    <div class="d-flex flex-row flex-wrap flex-md-nowrap justify-content-center gap-3 gap-md-4 gap-xl-5">
+                        <div class="footer-column">
+                            <h3 class="footer-title">Contactos</h3>
+                            <a href="mailto:info@mesanobre.pt">info@mesanobre.pt</a>
+                            <a href="tel:+351 999 999 999">+351 999 999 999</a>
+                            <span class="disclaimer mt-2">Chamada para rede móvel nacional</span>
+                        </div>
+                        <div class="footer-column">
+                            <h3 class="footer-title">Morada</h3>
+                            <span class="small d-flex flex-wrap" style="color: var(--primaryColor);">R. Dra. Maria Rita Cabral Sousa Ramos 2, 3430-261 Carregal do Sal</span>
+                            <a class="small" href="https://maps.app.goo.gl/sJtAXBQ4iG6oBji78" target="_blank">Google Maps <svg id="mapsArrow" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 640 640"><!--!Font Awesome Pro v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.--><path d="M541.9 139.5C546.4 127.7 543.6 114.3 534.7 105.4C525.8 96.5 512.4 93.6 500.6 98.2L84.6 258.2C71.9 263 63.7 275.2 64 288.7C64.3 302.2 73.1 314.1 85.9 318.3L262.7 377.2L321.6 554C325.9 566.8 337.7 575.6 351.2 575.9C364.7 576.2 376.9 568 381.8 555.4L541.8 139.4z"/></svg></a>
+                        </div>
+                        <div class="footer-column">
+                            <h3 class="footer-title">Informação Legal</h3>
+                            <a class="small" href="privacy.html">Política de Privacidade</a>
+                            <a class="small" href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">Livro de Reclamações</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Licensing -->
+                <div class="d-flex flex-column align-self-center p-0">
+                    <div class="small">made by <a href="https://github.com/huger6" target="_blank">huger6</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Leaflet JS-->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([40.43672758094532, -7.989199031578175], 16); // Location
+
+        // Credits to maps usage (DO NOT REMOVE)
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 19
+        }).addTo(map);
+
+        map.scrollWheelZoom.disable();
+
+        // Personalized marker
+        const customIcon = L.icon({
+            iconUrl: "static/leaflet-marker-icon-2x-yellow.png",
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowUrl: "static/leaflet-marker-shadow.png",
+            shadowSize: [41, 41]
+        });
+
+        L.marker([40.43672758094532, -7.989199031578175], { icon: customIcon }).addTo(map)
+            //.bindPopup('Estamos aqui!')
+            .openPopup();
+    </script>
+</body>
+</html>

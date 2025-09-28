@@ -1,0 +1,206 @@
+<!--
+  Copyright (c) 2025 Hugo Afonso (huger6)
+  Todos os direitos reservados | All rights reserved.
+
+  É proibida a cópia, modificação ou redistribuição deste ficheiro
+  sem autorização expressa do autor.
+  Copying, modifying or redistributing this file without permission is prohibited.
+
+  Contacto: hugoafonso333@gmail.com
+-->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa Nobre - Galeria</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="static/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/icons/favicon-16x16.png">
+    <link rel="manifest" href="static/site.webmanifest">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Core CSS theme -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+    <header class="flex-shrink-0">
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container-fluid d-flex align-items-center px-0 px-lg-2 px-xl-5">
+                <a class="navbar-brand me-auto ms-5" href="index.html">
+                    <img src="static/logo.png" alt="Logo" loading="eager" style="width: 75px; height: 75px;">
+                </a>
+                <div class="d-flex align-items-center gap-2 gap-xl-3 gap-xxl-4 ms-3">
+                    <!-- Social Media here -->
+                    <button class="navbar-toggler pe-4 custom-navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Alterar modod de navegação">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header m-2 text-center justify-content-start gap-3" style="position: relative;">
+                            <a href="index.html" style="text-decoration: none;"><img class="user-select-false" src="static/logo.png" alt="Logo" loading="lazy" style="width: 60px; height: 60px;"></a>
+                            <a href="index.html" style="text-decoration: none; margin-left: 5px !important;"><h3 class="user-select-false content-title m-0 p-0" style="color: var(--navLinkColor); padding-top: 8px !important;">Mesa Nobre</h3></a>
+                            <button type="button" class="close-button-hamburger-menu me-4" style="padding-top: 8px !important;" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                        </div>
+                        <div class="offcanvas-body pe-2 pe-xl-4 ms-3 ms-md-0">
+                            <ul class="navbar-nav justify-content-end flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link mx-xl-1 navbar-option user-select-false" href="index.html">Início</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-xl-1 navbar-option user-select-false" href="menu.html">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-xl-1 navbar-option user-select-false" href="contact.html">Contactos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-xl-1 navbar-option user-select-false" style="color: var(--navLinkColor) !important;" href="galery.html">Galeria</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="pt-4">
+        <!-- About Us -->
+        <div class="container py-4">
+            <div class="d-flex flex-column gap-2 align-items-center">
+                <h1 class="content-title" style="position: relative; padding: 0.2rem 0.6rem;">Galeria<div class="underline"></div></h1>
+                <span class="content-subtitle" style="font-size: 28px;">Descubra tudo sobre nós nestas fotografias</span>
+            </div>
+            <div class="masonry mt-4">
+                <div class="masonry-item">
+                    <a href="static/img1.jpg" data-lightbox="galeria" data-title="Panquecas">
+                        <img src="static/img1.jpg" alt="Img1" class="img-fluid rounded shadow-sm" alt="Panquecas">
+                    </a>
+                </div>
+                <div class="masonry-item">
+                    <a href="static/img2.jpg" data-lightbox="galeria" data-title="Salada de Frango">
+                        <img src="static/img2.jpg" alt="Img2" class="img-fluid rounded shadow-sm" alt="Salada de Frango">
+                    </a>
+                </div>
+                <div class="masonry-item">
+                    <a href="static/img3.jpg" data-lightbox="galeria" data-title="Salmão">
+                        <img src="static/img3.jpg" alt="Img3" class="img-fluid rounded shadow-sm" alt="Salmão">
+                    </a>
+                </div>
+                <div class="masonry-item">
+                    <a href="static/img4.jpg" data-lightbox="galeria" data-title="Hamburguer">
+                        <img src="static/img4.jpg" alt="Img4" class="img-fluid rounded shadow-sm" alt="Hamburguer">
+                    </a>
+                </div>
+                <div class="masonry-item">
+                    <a href="static/entrada.jpg" data-lightbox="galeria" data-title="Entrada">
+                        <img src="static/entrada.jpg" alt="Img5" class="img-fluid rounded shadow-sm" alt="Entrada">
+                    </a>
+                </div>
+                <div class="masonry-item">
+                    <a href="static/img5.jpg" data-lightbox="galeria" data-title="Cozido à Portuguesa">
+                        <img src="static/img5.jpg" alt="Img6" class="img-fluid rounded shadow-sm" alt="Cozido à Portuguesa">
+                    </a>
+                </div>
+                <div class="masonry-item">
+                    <a href="static/img6.jpg" data-lightbox="galeria" data-title="Esparguete à Bolonhesa">
+                        <img src="static/img6.jpg" alt="Img7" class="img-fluid rounded shadow-sm" alt="Esparguete à Bolonhesa">
+                    </a>
+                </div>
+                <div class="masonry-item">
+                    <a href="static/chefs.jpg" data-lightbox="galeria" data-title="Os nossos cozinheiros">
+                        <img src="static/chefs.jpg" alt="Img8" class="img-fluid rounded shadow-sm" alt="Os nossos cozinheiros">
+                    </a>
+                </div>
+                <div class="masonry-item">
+                    <a href="static/img7.jpg" data-lightbox="galeria" data-title="Grelhada Mista">
+                        <img src="static/img7.jpg" alt="Img9" class="img-fluid rounded shadow-sm" alt="Grelhada Mista">
+                    </a>
+                </div>
+                <div class="masonry-item">
+                    <a href="static/img8.jpg" data-lightbox="galeria" data-title="Arroz de Polvo">
+                        <img src="static/img8.jpg" alt="Img10" class="img-fluid rounded shadow-sm" alt="Arroz de Polvo">
+                    </a>
+                </div>
+                <div class="masonry-item">
+                    <a href="static/img9.png" data-lightbox="galeria" data-title="Lulas Recheadas">
+                        <img src="static/img9.png" alt="Img11" class="img-fluid rounded shadow-sm" alt="Lulas Recheadas">
+                    </a>
+                </div>
+                <div class="masonry-item">
+                    <a href="static/img10.jpeg" data-lightbox="galeria" data-title="Bolo de Iogurte">
+                        <img src="static/img10.jpeg" alt="Img12" class="img-fluid rounded shadow-sm" alt="Bolo de Iogurte">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid px-3 py-5 mt-auto">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column flex-md-row align-items-start flex-nowrap gap-4 gap-xl-5 g-0">
+                <!-- Company -->
+                <div class="d-flex align-items-center flex-column flex-md-row flex-nowrap gap-2 gap-lg-4 gap-xl-5 p-0 g-0">
+                    <!-- Logo -->
+                    <div class="d-flex flex-column align-items-center gap-2 gap-md-3 p-2">
+                        <a href="index.html"><img src="static/logo.png" alt="Logo" loading="lazy" style="width: 80px; height: 80px;"></a>
+                        <div class="small m-0 p-0">Copyright &copy; Mesa Nobre 2025</div>
+                    </div>
+                    <div class="d-flex flex-row flex-wrap flex-md-nowrap justify-content-center gap-3 gap-md-4 gap-xl-5">
+                        <div class="footer-column">
+                            <h3 class="footer-title">Contactos</h3>
+                            <a href="mailto:info@mesanobre.pt">info@mesanobre.pt</a>
+                            <a href="tel:+351 999 999 999">+351 999 999 999</a>
+                            <span class="disclaimer mt-2">Chamada para rede móvel nacional</span>
+                        </div>
+                        <div class="footer-column">
+                            <h3 class="footer-title">Morada</h3>
+                            <span class="small d-flex flex-wrap" style="color: var(--primaryColor);">R. Dra. Maria Rita Cabral Sousa Ramos 2, 3430-261 Carregal do Sal</span>
+                            <a class="small" href="https://maps.app.goo.gl/sJtAXBQ4iG6oBji78" target="_blank">Google Maps <svg id="mapsArrow" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 640 640"><!--!Font Awesome Pro v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.--><path d="M541.9 139.5C546.4 127.7 543.6 114.3 534.7 105.4C525.8 96.5 512.4 93.6 500.6 98.2L84.6 258.2C71.9 263 63.7 275.2 64 288.7C64.3 302.2 73.1 314.1 85.9 318.3L262.7 377.2L321.6 554C325.9 566.8 337.7 575.6 351.2 575.9C364.7 576.2 376.9 568 381.8 555.4L541.8 139.4z"/></svg></a>
+                        </div>
+                        <div class="footer-column">
+                            <h3 class="footer-title">Informação Legal</h3>
+                            <a class="small" href="privacy.html">Política de Privacidade</a>
+                            <a class="small" href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">Livro de Reclamações</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Licensing -->
+                <div class="d-flex flex-column align-self-center p-0">
+                    <div class="small">made by <a href="https://github.com/huger6" target="_blank">huger6</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script>
+        // ativa navegação em loop e ajusta transição
+        lightbox.option({
+            'fitImagesInViewport': true,
+            'albumLabel': "Imagem %1 de %2",
+            'resizeDuration': 300,
+            'alwaysShowNavOnTouchDevices': true,
+            'disableScrolling': false,
+            'fadeDuration': 300,
+            'imageFadeDuration': 300,
+            'positionFromTop': 100,
+            'wrapAround': false,
+        })
+  </script>
+</body>
+</html>
